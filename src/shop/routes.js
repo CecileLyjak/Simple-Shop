@@ -1,9 +1,10 @@
 const { Router } = require('express');
+const controller = require('./controller');
 
 const router = Router();
 
-router.get('/', (req, res) => {
-    res.send("using api route");
-});
+router.get("/", controller.getProducts);
+router.post("/", controller.addProduct);
+router.get("/:id", controller.getProductById);
 
 module.exports = router;
