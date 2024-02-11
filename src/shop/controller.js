@@ -1,3 +1,4 @@
+const { response } = require('express');
 const pool = require('../../db');
 const queries = require('./queries');
 
@@ -33,8 +34,42 @@ const addProduct = (req, res) => {
     });
 };
 
+const removeProduct = (req, res) => {
+    const id = parseInt(req.params.id);
+
+    pool.query(queries.getProductById, [id], (error, results) => {
+        const noProductFound = !results.rows.length;
+        if (noProductFound) {
+            res.send("Product does not exist in the database");
+        }
+        pool.query(queries.removeProduct, [id], (error, results) => {
+            if (error) throw error;
+            res.status(200).send("Product removed successfully");
+        });
+    });
+};
+
+const updateProduct = (req, res) => {
+    const id = parseInt(req.params.id);
+    const { price } = req.body;
+
+    pool.query(queries.getProductById, [id], (error, results) => {
+        const noProductFound = !results.rows.length;
+        if (noProductFound) {
+            res.send("Product does not exist in the database");
+        }
+
+        pool.query(queries.updateProduct, [price, id], (error, results) => {
+            if (error) throw error;
+            res.status(200).send("Product updated successfully");
+        });
+    });
+};
+
 module.exports = {
     getProducts,
     getProductById,
     addProduct,
+    removeProduct,
+    updateProduct,
 };
