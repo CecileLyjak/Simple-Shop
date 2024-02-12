@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'NN Rektorat';
+    src: local('NN Rektorat Heavy'), local('NN-Rektorat-Heavy'),
+        url('NNRektoratSTD-Heavy.woff2') format('woff2'),
+        url('NNRektoratSTD-Heavy.woff') format('woff'),
+        url('NNRektoratSTD-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }

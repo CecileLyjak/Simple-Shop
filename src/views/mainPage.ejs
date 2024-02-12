@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/mainPage.css"/> 
+</head>
+<body>
+    <div class="container">
+    <!-- Dołącz pasek menu -->
+         <%- include('navbar.ejs'); %> 
+
+    <!-- Treść strony Home -->
+        <div class="photoContainer">
+            <li class="photoStart"><img src="photos/mainPage.jpg"></li> 
+            <div class="text">
+                <h1>
+                    Your cleanser for every day, 
+                    every month, every season.
+                </h1>
+                <button>
+                    THE ULTIMATE REFRESH
+                </button>
+            </div>
+        </div>
+    </div>  
+    
+</body>
+</html>

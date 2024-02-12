@@ -1,0 +1,48 @@
+@font-face{
+    font-family: rhodeFont1;
+    src: url('/fonts/slimFont.woff2');
+    font-weight: 800;
+}
+
+.photoStart {
+    list-style-type: none;
+}
+
+.photoStart img {
+    width: 97%;
+    margin-left: 1.5%;
+    border-radius: 15px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.text {
+    font-family: rhodeFont1;
+    font-size: 1.3vw;
+    width: 35%;
+    bottom: 10%;
+    right: 6%;
+    color: white;
+    position: absolute;
+    line-height: 30px;
+    text-align: right;
+}
+
+.text button {
+    width: 80%;
+    height: 35px;
+    margin-top: 2vw;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.5vw;
+    font-family: rhodeFont1;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.text button:hover{
+    background-color: white;
+    color: #67645E;
+    transition: all .3s ease ;
+}
