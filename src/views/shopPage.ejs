@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="/css/shopPage.css"> 
+</head>
+<body>
+    <!-- Dołącz pasek menu -->
+    <%- include('navbar.ejs'); %> 
+
+    <!-- Treść strony Home -->
+    <ul class="products">
+        <% products.forEach(product => { %>
+            <li class="boxContent">
+                <a href="/shop/<%= product.id %>"><%= product.name %></a>
+                <p>$ <%= product.price %></p>
+                <img src="<%= product.imglink %>" >
+            </li>
+        <% }); %>
+    </ul>
+    
+</body>
+</html>
