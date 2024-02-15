@@ -1,0 +1,51 @@
+.container img {
+    width: 97%;
+    margin-left: 1.5%;
+    border-radius: 15px;
+    position: relative;
+}
+
+.boxContent {
+    width: 40%;
+    height: 70%;
+    background-color: #F1F0ED;
+    border-radius: 15px;
+    position: absolute;
+    right: 8%;
+    bottom: 5%;
+}
+
+.boxContent .name {
+    font-size: 4.5vh;
+    color: #67645E;
+    margin-left: 5%;
+}
+
+.boxContent .description {
+    color: #67645E;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: rhodeFont1;
+    font-size: 3.5vh;
+    letter-spacing: 2px;
+
+}
+
+.boxContent button {
+    width: 90%;
+    margin-left: 5%;
+    height: 5vh;
+    border: 1px solid #67645E;
+    border-radius: 20px;
+    font-size: 3vh;
+    font-family: rhodeFont1;
+    color: #67645E;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.boxContent button:hover{
+    background-color: #67645E;
+    color: #F1F0ED;
+    transition: all .5s ease ;
+}

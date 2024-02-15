@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="stylesheet" href="/css/productPage.css"> 
+</head>
+<body>
+    <!-- Dołącz pasek menu -->
+    <%- include('navbar.ejs'); %> 
+
+    <!-- Treść strony Home -->
+    <ul class="container">
+        <img src="<%= products.imglink %>" >
+        <div class="boxContent">
+            <p class="name"> <%= products.name %></p>
+            <p class="description"><%= products.description %></p>
+            <button>Add to cart - $<%= products.price %></button>
+        </div>
+    </ul>
+    
+</body>
+</html>
