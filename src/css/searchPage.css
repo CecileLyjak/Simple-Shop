@@ -1,0 +1,52 @@
+@font-face{
+    font-family: rhodeFont;
+    src: url('/fonts/NNRektoratSTD-Heavy/NNRektoratSTD-Heavy.ttf') format('truetype');
+}
+
+.background {
+    background-color: #F1F0ED;
+    width: 97%;
+    height: 94vh;
+    border-radius: 20px;
+    margin-top: 3vh;
+    margin-left: 1.5%;
+    position: relative;
+}
+
+.search-window input{
+    width: 40vw;
+    height: 5vh;
+    position: absolute;
+    left: 28vw;
+    top: 35vh;
+    font-family: rhodeFont;
+    font-size: 3vh;
+    color: #67645E;
+    border-radius: 15px;
+    border: 1px solid #F1F0ED;
+    padding: 0 5px;
+    outline: none;
+}
+
+
+
+.search-window button {
+    width: 40vw;
+    height: 5vh;
+    position: absolute;
+    left: 28vw;
+    top: 45vh;
+    border: 1px solid #67645E;
+    border-radius: 20px;
+    font-size: 3vh;
+    font-family: rhodeFont;
+    color: #67645E;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-window button:hover{
+    background-color: #67645E;
+    color: #F1F0ED;
+    transition: all .5s ease ;
+}

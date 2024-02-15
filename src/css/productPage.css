@@ -1,3 +1,9 @@
+@font-face{
+    font-family: rhodeFont1;
+    src: url('/fonts/slimFont.woff2');
+    font-weight: 800;
+}
+
 .container img {
     width: 97%;
     margin-left: 1.5%;
@@ -6,7 +12,7 @@
 }
 
 .boxContent {
-    width: 40%;
+    width: 42%;
     height: 70%;
     background-color: #F1F0ED;
     border-radius: 15px;
@@ -16,7 +22,7 @@
 }
 
 .boxContent .name {
-    font-size: 4.5vh;
+    font-size: 4.3vh;
     color: #67645E;
     margin-left: 5%;
 }
@@ -26,7 +32,7 @@
     margin-left: 5%;
     margin-right: 5%;
     font-family: rhodeFont1;
-    font-size: 3.5vh;
+    font-size: 3.3vh;
     letter-spacing: 2px;
 
 }

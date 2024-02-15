@@ -66,10 +66,23 @@ const updateProduct = (req, res) => {
     });
 };
 
+const getProductsByName = (req, res) => {
+    const { name } = req.query;
+
+    pool.query(queries.getProductByName, [`%${name}%`], (error, results) => {
+        if (results.rows.length) {
+            res.render("shopPage", { products: results.rows });
+        } else {
+            res.status(404).send("No products found with the given name");
+        }
+    });
+};
+
 module.exports = {
     getProducts,
     getProductById,
     addProduct,
     removeProduct,
     updateProduct,
+    getProductsByName,
 };
